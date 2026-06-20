@@ -1,0 +1,23 @@
+[
+  {
+    "id": "n001",
+    "message": "VIKASANA SYSTEMS are going to be Pvt. Ltd. soon.",
+    "from": "2025-01-01T00:00:00",
+    "to": "2026-12-31T23:59:59",
+    "priority": "high"
+  },
+  {
+    "id": "n002",
+    "message": "VIKASANA COMMAND — Unified GCS Platform launching soon. Register interest via Reach Us.",
+    "from": "2025-01-01T00:00:00",
+    "to": "2026-12-31T23:59:59",
+    "priority": "high"
+  },
+  {
+    "id": "n003",
+    "message": "NOTICE — All graphics and 3D assets on this site are open-source placeholders, to be replaced at public launch.",
+    "from": "2025-01-01T00:00:00",
+    "to": "2026-12-31T23:59:59",
+    "priority": "low"
+  }
+]

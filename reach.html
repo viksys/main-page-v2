@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reach Us — Vikasana Systems</title>
+  <link rel="icon" type="image/png" href="assets/primarylogo.png" />
+  <meta name="description" content="Contact Vikasana Systems — clients, investors, and quick glance information. MSME registered company, Mangalore, India." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/loader.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/terms.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body class="body--loading has-notif">
+
+  <!-- LOADING SCREEN -->
+  <div id="pageLoader">
+    <div class="loader__ping"></div>
+    <div class="loader__ping"></div>
+    <div class="loader__ping"></div>
+    <div class="loader__bracket loader__bracket--tl"></div>
+    <div class="loader__bracket loader__bracket--tr"></div>
+    <div class="loader__bracket loader__bracket--bl"></div>
+    <div class="loader__bracket loader__bracket--br"></div>
+    <div class="loader__inner">
+      <div class="loader__brand">
+        <img class="loader__logo" src="assets/nbg_dark_logo.png" alt="Vikasana Systems" />
+        <span class="loader__brand-text">Vikasana Systems</span>
+      </div>
+      <div class="loader__log" id="loaderLines"></div>
+      <div class="loader__progress-wrap">
+        <div class="loader__progress-header">
+          <span class="loader__progress-label">SYSTEM BOOT</span>
+          <span class="loader__pct" id="loaderPct">0%</span>
+        </div>
+        <div class="loader__bar-track">
+          <div class="loader__bar" id="loaderBar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTIFICATION TICKER -->
+  <div id="notifBar">
+    <span class="notif-prefix">&#9658; VIKASANA</span>
+    <div class="notif-track-wrap">
+      <div id="notifTrack"></div>
+    </div>
+  </div>
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <img class="nav__logo nav__logo--dark" src="assets/nbg_dark_logo.png" alt="Vikasana Systems" />
+        <img class="nav__logo nav__logo--light" src="assets/nbg_light_logo.png" alt="Vikasana Systems" />
+      </a>
+      <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html" class="nav__link">HOME</a></li>
+        <li><a href="products.html" class="nav__link">PRODUCTS</a></li>
+        <li><a href="about.html" class="nav__link">ABOUT</a></li>
+        <li><a href="reach.html" class="nav__link nav__link--active">REACH US</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero reach-hero" style="position:relative;overflow:hidden;background-image:url(assets/mangaluru-map.png);background-size:cover;background-position:center;background-blend-mode:luminosity;">
+    <div style="position:absolute;inset:0;background:rgba(0,0,0,0.82);z-index:0;pointer-events:none;"></div>
+    <canvas id="earthCanvas" style="position:absolute;top:18%;right:-18%;width:65%;height:110%;display:block;pointer-events:all;z-index:1;cursor:grab;"></canvas>
+    <div class="container" style="position:relative;z-index:2;">
+      <div class="page-hero__content">
+        <div class="page-hero__eyebrow">
+          <span class="eyebrow">REACH US // VIKASANA SYSTEMS</span>
+        </div>
+        <h1>Establish<br /><span style="color: var(--clr-primary);">Contact</span></h1>
+        <p>Whether you are a procurement authority, a strategic investor, or a system integrator — we want to hear from you. Select the channel that fits your intent.</p>
+        <p style="font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:0.12em;color:rgba(234,130,29,0.6);text-transform:uppercase;margin-top:var(--sp-4);">&#9679; Mangalore, Karnataka, India</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPANY IDENTITY BAND -->
+  <div class="reach-identity">
+    <div class="container">
+      <div class="reach-identity__inner">
+        <div class="reach-identity__item">
+          <span class="reach-identity__label">REGISTRATION</span>
+          <span class="reach-identity__value">MSME Registered Enterprise</span>
+        </div>
+        <div class="reach-identity__divider"></div>
+        <div class="reach-identity__item">
+          <span class="reach-identity__label">INCORPORATED</span>
+          <span class="reach-identity__value">2025</span>
+        </div>
+        <div class="reach-identity__divider"></div>
+        <div class="reach-identity__item">
+          <span class="reach-identity__label">HEADQUARTERS</span>
+          <span class="reach-identity__value">Mangalore, Karnataka, India</span>
+        </div>
+        <div class="reach-identity__divider"></div>
+        <div class="reach-identity__item">
+          <span class="reach-identity__label">ENTITY TYPE</span>
+          <span class="reach-identity__value">MSME — Pvt. Ltd. In Progress</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <section class="section">
+    <div class="container">
+      <div class="reach-tabs" role="tablist">
+        <button class="reach-tab is-active" role="tab" aria-selected="true" data-tab="clients">CLIENTS</button>
+        <button class="reach-tab" role="tab" aria-selected="false" data-tab="investors">INVESTORS</button>
+        <button class="reach-tab" role="tab" aria-selected="false" data-tab="glance">QUICK GLANCE</button>
+      </div>
+
+      <!-- CLIENTS PANEL -->
+      <div class="reach-panel is-active" id="panel-clients" role="tabpanel">
+        <div class="reach-split">
+          <div>
+            <span class="eyebrow" style="margin-bottom: var(--sp-6); display: inline-block;">DEFENSE AND PROCUREMENT INQUIRY</span>
+            <h2 class="h2" style="margin-bottom: var(--sp-6);">Request a briefing</h2>
+            <p class="body-l" style="margin-bottom: var(--sp-10);">
+              Procurement teams, system integrators, and defense contractors — submit your inquiry below. Our team will respond with a tailored technical briefing and roadmap access.
+            </p>
+            <form class="reach-form" id="clientForm">
+              <div class="reach-form__group">
+                <label for="c-name">Full Name</label>
+                <input type="text" id="c-name" name="name" placeholder="Col. A. Sharma" autocomplete="name" />
+              </div>
+              <div class="reach-form__group">
+                <label for="c-org">Organization</label>
+                <input type="text" id="c-org" name="org" placeholder="Ministry of Defence" />
+              </div>
+              <div class="reach-form__group">
+                <label for="c-role">Role</label>
+                <input type="text" id="c-role" name="role" placeholder="Procurement Officer" />
+              </div>
+              <div class="reach-form__group">
+                <label for="c-email">Official Email</label>
+                <input type="email" id="c-email" name="email" placeholder="a.sharma@mod.gov.in" autocomplete="email" />
+              </div>
+              <div class="reach-form__group reach-form__group--full">
+                <label for="c-interest">Area of Interest</label>
+                <select id="c-interest" name="interest">
+                  <option value="" disabled selected>Select platform or capability</option>
+                  <option>Vikasana Command — Unified GCS</option>
+                  <option>Vikasana Atlas — Mission Planning</option>
+                  <option>Vikasana Sentinel — Threat AI</option>
+                  <option>Vikasana Forge — Protocol Integration</option>
+                  <option>Full Platform Suite</option>
+                </select>
+              </div>
+              <div class="reach-form__group reach-form__group--full">
+                <label for="c-msg">Operational Requirement</label>
+                <textarea id="c-msg" name="message" placeholder="Briefly describe your operational requirement or integration scenario..."></textarea>
+              </div>
+              <div class="reach-form__group reach-form__group--full reach-form__submit">
+                <button type="submit" class="btn btn--primary">SUBMIT INQUIRY</button>
+              </div>
+        <!-- Documents quick link -->
+        <div style="margin-top:var(--sp-4);padding:var(--sp-4) var(--sp-6);background:rgba(234,130,29,0.06);border-left:2px solid var(--clr-primary);display:flex;align-items:center;justify-content:space-between;gap:var(--sp-6);flex-wrap:wrap;">
+          <span style="font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:0.12em;text-transform:uppercase;color:var(--clr-text-muted);">Need legal or technical documents before engaging?</span>
+          <a href="documents.html" style="font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:0.14em;text-transform:uppercase;color:var(--clr-primary);white-space:nowrap;">VIEW ALL DOCS &#8599;</a>
+        </div>
+            </form>
+          </div>
+
+          <div>
+            <div class="reach-info-card">
+              <span class="eyebrow" style="margin-bottom: var(--sp-4); display: inline-block;">WHAT TO EXPECT</span>
+              <div class="about__pillar">
+                <span class="about__pillar-num">01</span>
+                <div class="about__pillar-text">
+                  <h4>Technical Briefing</h4>
+                  <p>A detailed overview of the platform architecture, supported UXV categories, and integration requirements.</p>
+                </div>
+              </div>
+              <div class="about__pillar">
+                <span class="about__pillar-num">02</span>
+                <div class="about__pillar-text">
+                  <h4>Roadmap Access</h4>
+                  <p>Review the product development timeline, upcoming capabilities, and planned theater-level deployment features.</p>
+                </div>
+              </div>
+              <div class="about__pillar">
+                <span class="about__pillar-num">03</span>
+                <div class="about__pillar-text">
+                  <h4>Pilot Discussion</h4>
+                  <p>Explore options for a controlled pilot deployment in your operational environment, with full technical support.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- COMPANY ADDRESS CARD -->
+            <div class="reach-address-card">
+              <span class="eyebrow" style="margin-bottom: var(--sp-4); display: inline-block;">REGISTERED OFFICE</span>
+              <div class="reach-address__grid">
+                <div class="reach-address__row">
+                  <span class="reach-address__key">Company</span>
+                  <span class="reach-address__val">Vikasana Systems</span>
+                </div>
+                <div class="reach-address__row">
+                  <span class="reach-address__key">Registration</span>
+                  <span class="reach-address__val">MSME Registered</span>
+                </div>
+                <div class="reach-address__row">
+                  <span class="reach-address__key">Established</span>
+                  <span class="reach-address__val">2025</span>
+                </div>
+                <div class="reach-address__row">
+                  <span class="reach-address__key">City</span>
+                  <span class="reach-address__val">Mangalore (Mangaluru)</span>
+                </div>
+                <div class="reach-address__row">
+                  <span class="reach-address__key">State</span>
+                  <span class="reach-address__val">Karnataka, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INVESTORS PANEL -->
+      <div class="reach-panel" id="panel-investors" role="tabpanel">
+        <div class="reach-split">
+          <div>
+            <span class="eyebrow" style="margin-bottom: var(--sp-6); display: inline-block;">INVESTOR RELATIONS</span>
+            <h2 class="h2" style="margin-bottom: var(--sp-6);">Partner with us</h2>
+            <p class="body-l" style="margin-bottom: var(--sp-10);">
+              We are building India's most consequential defense software company. If you are a strategic investor, defense-focused fund, or institutional partner — reach out for our investor briefing package.
+            </p>
+            <form class="reach-form" id="investorForm">
+              <div class="reach-form__group">
+                <label for="i-name">Full Name</label>
+                <input type="text" id="i-name" name="name" placeholder="Arjun Mehta" autocomplete="name" />
+              </div>
+              <div class="reach-form__group">
+                <label for="i-fund">Fund / Firm</label>
+                <input type="text" id="i-fund" name="fund" placeholder="Bharat Capital Partners" />
+              </div>
+              <div class="reach-form__group">
+                <label for="i-email">Email</label>
+                <input type="email" id="i-email" name="email" placeholder="arjun@bharatcapital.in" autocomplete="email" />
+              </div>
+              <div class="reach-form__group">
+                <label for="i-stage">Investment Stage Focus</label>
+                <select id="i-stage" name="stage">
+                  <option value="" disabled selected>Select stage</option>
+                  <option>Pre-Seed</option>
+                  <option>Seed</option>
+                  <option>Series A</option>
+                  <option>Series B+</option>
+                  <option>Strategic / Corporate</option>
+                  <option>Government / Defence Fund</option>
+                </select>
+              </div>
+              <div class="reach-form__group reach-form__group--full">
+                <label for="i-msg">Investment Thesis or Question</label>
+                <textarea id="i-msg" name="message" placeholder="Describe your interest or ask a specific question about our market position, IP, or growth strategy..."></textarea>
+              </div>
+              <div class="reach-form__group reach-form__group--full reach-form__submit">
+                <button type="submit" class="btn btn--primary">REQUEST PACKAGE</button>
+              </div>
+        <!-- Documents quick link -->
+        <div style="margin-top:var(--sp-4);padding:var(--sp-4) var(--sp-6);background:rgba(234,130,29,0.06);border-left:2px solid var(--clr-primary);display:flex;align-items:center;justify-content:space-between;gap:var(--sp-6);flex-wrap:wrap;">
+          <span style="font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:0.12em;text-transform:uppercase;color:var(--clr-text-muted);">Need legal or technical documents before engaging?</span>
+          <a href="documents.html" style="font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:0.14em;text-transform:uppercase;color:var(--clr-primary);white-space:nowrap;">VIEW ALL DOCS &#8599;</a>
+        </div>
+            </form>
+          </div>
+
+          <div>
+            <div class="reach-info-card">
+              <span class="eyebrow" style="margin-bottom: var(--sp-4); display: inline-block;">INVESTOR BRIEFING INCLUDES</span>
+              <div class="about__pillar">
+                <span class="about__pillar-num">01</span>
+                <div class="about__pillar-text">
+                  <h4>Market Opportunity</h4>
+                  <p>India's defense modernization pipeline, the global UXV GCS market, and Vikasana's positioning within it.</p>
+                </div>
+              </div>
+              <div class="about__pillar">
+                <span class="about__pillar-num">02</span>
+                <div class="about__pillar-text">
+                  <h4>IP and Technical Moat</h4>
+                  <p>Full vertical stack ownership, protocol IP, AI model library, and integration layer — a defensible technical foundation.</p>
+                </div>
+              </div>
+              <div class="about__pillar">
+                <span class="about__pillar-num">03</span>
+                <div class="about__pillar-text">
+                  <h4>Traction and Roadmap</h4>
+                  <p>Current development milestones, partnership pipeline, and the path to production-grade deployment with defense clients.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reach-address-card">
+              <span class="eyebrow" style="margin-bottom: var(--sp-4); display: inline-block;">COMPANY DETAILS</span>
+              <div class="reach-address__grid">
+                <div class="reach-address__row">
+                  <span class="reach-address__key">Entity</span>
+                  <span class="reach-address__val">Vikasana Systems</span>
+                </div>
+                <div class="reach-address__row">
+                  <span class="reach-address__key">Stage</span>
+                  <span class="reach-address__val">Early Stage — Active Development</span>
+                </div>
+                <div class="reach-address__row">
+                  <span class="reach-address__key">Founded</span>
+                  <span class="reach-address__val">2025</span>
+                </div>
+                <div class="reach-address__row">
+                  <span class="reach-address__key">Base</span>
+                  <span class="reach-address__val">Mangalore, Karnataka, India</span>
+                </div>
+                <div class="reach-address__row">
+                  <span class="reach-address__key">MSME Status</span>
+                  <span class="reach-address__val">Registered</span>
+                </div>
+                <div class="reach-address__row">
+                  <span class="reach-address__key">Sector</span>
+                  <span class="reach-address__val">Defense Technology / Autonomous Systems</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUICK GLANCE PANEL -->
+      <div class="reach-panel" id="panel-glance" role="tabpanel">
+        <div style="margin-bottom: var(--sp-8);">
+          <span class="eyebrow" style="margin-bottom: var(--sp-4); display: inline-block;">COMPANY AT A GLANCE</span>
+          <h2 class="h2" style="margin-bottom: var(--sp-4);">Vikasana Systems — Snapshot</h2>
+          <p class="body-l">Key facts for press, analysts, partners, and anyone seeking a rapid overview of who we are and what we build.</p>
+        </div>
+
+        <div class="quick-glance__grid">
+          <div class="quick-glance__item">
+            <div class="quick-glance__label">Company</div>
+            <div class="quick-glance__value">Vikasana Systems Pvt. Ltd.</div>
+            <div class="quick-glance__note">Incorporated in India</div>
+          </div>
+          <div class="quick-glance__item">
+            <div class="quick-glance__label">Registration</div>
+            <div class="quick-glance__value">MSME Registered</div>
+            <div class="quick-glance__note">Govt. of India — Ministry of MSME</div>
+          </div>
+          <div class="quick-glance__item">
+            <div class="quick-glance__label">Founded</div>
+            <div class="quick-glance__value">2025</div>
+            <div class="quick-glance__note">Mangalore, Karnataka, India</div>
+          </div>
+          <div class="quick-glance__item">
+            <div class="quick-glance__label">Domain</div>
+            <div class="quick-glance__value">Defense Software</div>
+            <div class="quick-glance__note">UXV Ground Control Systems</div>
+          </div>
+          <div class="quick-glance__item">
+            <div class="quick-glance__label">Core Product</div>
+            <div class="quick-glance__value">Vikasana Command</div>
+            <div class="quick-glance__note">Unified GCS Platform</div>
+          </div>
+          <div class="quick-glance__item">
+            <div class="quick-glance__label">Development Model</div>
+            <div class="quick-glance__value">100% In-House</div>
+            <div class="quick-glance__note">No outsourcing. No vendor lock-in.</div>
+          </div>
+          <div class="quick-glance__item">
+            <div class="quick-glance__label">Supported Platforms</div>
+            <div class="quick-glance__value">5+ Categories</div>
+            <div class="quick-glance__note">UAV, UGV, RCWS, ASV, Loitering Munitions</div>
+          </div>
+          <div class="quick-glance__item">
+            <div class="quick-glance__label">Encryption</div>
+            <div class="quick-glance__value">AES-256</div>
+            <div class="quick-glance__note">All command datalinks</div>
+          </div>
+          <div class="quick-glance__item">
+            <div class="quick-glance__label">Operating Range</div>
+            <div class="quick-glance__value">-30°C to +50°C</div>
+            <div class="quick-glance__note">EMI, dust, shock, 95% humidity rated</div>
+          </div>
+          <div class="quick-glance__item">
+            <div class="quick-glance__label">Product Status</div>
+            <div class="quick-glance__value">In Development</div>
+            <div class="quick-glance__note">Publishing Soon — briefings available</div>
+          </div>
+          <div class="quick-glance__item">
+            <div class="quick-glance__label">Company Stage</div>
+            <div class="quick-glance__value">Early Stage</div>
+            <div class="quick-glance__note">Active product development since 2025</div>
+          </div>
+          <div class="quick-glance__item">
+            <div class="quick-glance__label">Mission Statement</div>
+            <div class="quick-glance__value" style="font-size: var(--text-md); line-height: 1.3;">One Control System. Infinite Possibilities.</div>
+          </div>
+        </div>
+
+        <div style="margin-top: var(--sp-10); padding: var(--sp-6) var(--sp-8); border: 1px solid var(--clr-border); background-color: var(--clr-bg-card);">
+          <p style="font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.1em; color: var(--clr-text-muted); text-transform: uppercase;">
+            For press inquiries, analyst briefings, or to request a media kit — use the Clients form above.
+            &nbsp;&nbsp;|&nbsp;&nbsp; Please also review our <a href="terms.html" style="color: var(--clr-primary);">Terms &amp; Conditions</a> for early-stage disclosure notices.
+          </p>
+        </div>
+
+        <!-- Documents CTA -->
+        <div style="margin-top: var(--sp-6); background-color: var(--clr-bg-card); border: 1px solid var(--clr-border); border-left: 3px solid var(--clr-primary); padding: var(--sp-6) var(--sp-8); display: flex; align-items: center; justify-content: space-between; gap: var(--sp-8); flex-wrap: wrap;">
+          <div>
+            <p style="font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.14em; text-transform: uppercase; color: var(--clr-primary); margin-bottom: var(--sp-2);">OFFICIAL DOCUMENTS</p>
+            <p style="font-size: var(--text-sm); color: var(--clr-text-muted);">Legal, investor, technical, and government documents are available on the Documents page.</p>
+          </div>
+          <a href="documents.html" class="btn btn--primary" style="flex-shrink: 0;">VIEW ALL DOCUMENTS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img class="footer__logo footer__logo--dark" src="assets/nbg_dark_logo.png" alt="Vikasana Systems" />
+          <img class="footer__logo footer__logo--light" src="assets/nbg_light_logo.png" alt="Vikasana Systems" />
+          <p class="footer__tagline">One Control System. Infinite Possibilities.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <span class="footer__col-head">COMPANY</span>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-head">CONTACT</span>
+            <a href="reach.html">Clients</a>
+            <a href="reach.html">Investors</a>
+            <a href="reach.html">Quick Glance</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-head">LEGAL</span>
+            <a href="terms.html">Terms &amp; Conditions</a>
+            <a href="documents.html">Documents</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2025 Vikasana Systems. MSME Registered — Mangalore, India.</span>
+        <span class="footer__mono">VIKASANA CMD // SECURE CHANNEL</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="js/notif.js"></script>
+    <script src="js/earth.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/reach.js"></script>
+</body>
+</html>

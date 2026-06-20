@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vikasana Systems — Unified GCS Command Platform</title>
+  <link rel="icon" type="image/png" href="assets/primarylogo.png" />
+  <meta name="description" content="India's most advanced military UXV command software. One unified Ground Control Station for every unmanned asset." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/loader.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body class="body--loading has-notif">
+
+  <!-- LOADING SCREEN -->
+  <div id="pageLoader">
+    <div class="loader__ping"></div>
+    <div class="loader__ping"></div>
+    <div class="loader__ping"></div>
+    <div class="loader__bracket loader__bracket--tl"></div>
+    <div class="loader__bracket loader__bracket--tr"></div>
+    <div class="loader__bracket loader__bracket--bl"></div>
+    <div class="loader__bracket loader__bracket--br"></div>
+    <div class="loader__inner">
+      <div class="loader__brand">
+        <img class="loader__logo" src="assets/nbg_dark_logo.png" alt="Vikasana Systems" />
+        <span class="loader__brand-text">Vikasana Systems</span>
+      </div>
+      <div class="loader__log" id="loaderLines"></div>
+      <div class="loader__progress-wrap">
+        <div class="loader__progress-header">
+          <span class="loader__progress-label">SYSTEM BOOT</span>
+          <span class="loader__pct" id="loaderPct">0%</span>
+        </div>
+        <div class="loader__bar-track">
+          <div class="loader__bar" id="loaderBar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTIFICATION TICKER -->
+  <div id="notifBar">
+    <span class="notif-prefix">&#9658; VIKASANA</span>
+    <div class="notif-track-wrap">
+      <div id="notifTrack"></div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <img class="nav__logo nav__logo--dark" src="assets/nbg_dark_logo.png" alt="Vikasana Systems" />
+        <img class="nav__logo nav__logo--light" src="assets/nbg_light_logo.png" alt="Vikasana Systems" />
+      </a>
+      <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html" class="nav__link nav__link--active">HOME</a></li>
+        <li><a href="products.html" class="nav__link">PRODUCTS</a></li>
+        <li><a href="about.html" class="nav__link">ABOUT</a></li>
+        <li><a href="reach.html" class="nav__link">REACH US</a></li>
+        <li><a href="documents.html" class="nav__link">DOCUMENTS</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <!-- Background image layer -->
+    <div class="hero__bg"></div>
+    <!-- Tactical grid canvas over bg -->
+    <canvas class="hero__grid" id="heroGrid"></canvas>
+    <!-- Dark vignette overlay -->
+    <div class="hero__vignette"></div>
+
+    <!-- Split layout: text left, 3D model right -->
+    <div class="hero__content-wrap">
+      <div class="hero__content">
+        <div class="hero__eyebrow">
+          <span class="hero__tag">GCS // COMMAND ARCHITECTURE</span>
+          <span class="hero__status">
+            <span class="hero__dot"></span>SYSTEM ONLINE
+          </span>
+        </div>
+        <h1 class="hero__headline">
+          ONE CONTROL<br />SYSTEM.<br /><span class="hero__accent">INFINITE</span><br />POSSIBILITIES.
+        </h1>
+        <p class="hero__sub">
+          Unified ground control station and command architecture for military drones, UAVs, UGVs, tactical robotics, and autonomous battlefield vehicles — all from a single platform built for army-grade operations.
+        </p>
+        <div class="hero__cta">
+          <a href="reach.html" class="btn btn--primary">REQUEST BRIEFING</a>
+          <a href="about.html" class="btn btn--ghost">LEARN MORE</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero__scroll" id="heroScroll">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-text">SCROLL</span>
+    </div>
+    <div class="hero__hud-tl">VIKASANA CMD v3.1</div>
+    <div class="hero__hud-tr">LAT 12.8698 / LNG 74.8435</div>
+    <div class="hero__hud-bl">FLEET STATUS: NOMINAL</div>
+    <div class="hero__hud-br">ENC: AES-256</div>
+  </section>
+
+  <!-- PROBLEM STATEMENT -->
+  <section class="problem section" id="problem">
+    <div class="container">
+      <div class="problem__grid">
+        <div class="problem__left">
+          <span class="eyebrow">THE PROBLEM</span>
+          <h2 class="h2">Fragmented systems are making the battlefield unpredictable</h2>
+        </div>
+        <div class="problem__right">
+          <p class="body-l">
+            Military forces deploying drones, UAVs, UGVs, and RCWS platforms face a critical vulnerability: siloed ground control stations, incompatible protocols, and vendor lock-in leave commanders blind when seconds matter most.
+          </p>
+          <p class="body-l">
+            Vikasana Systems solves this with one unified GCS for every unmanned asset in your fleet — built from the ground up, with no outsourcing and no vendor lock-in.
+          </p>
+          <div class="problem__stat-row">
+            <div class="stat">
+              <span class="stat__num">1</span>
+              <span class="stat__label">Unified Platform</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">&lt;100ms</span>
+              <span class="stat__label">Command Latency</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">24/7</span>
+              <span class="stat__label">Operational Readiness</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section class="capabilities section section--alt" id="capabilities">
+    <div class="container">
+      <div class="section__header">
+        <span class="eyebrow">FULL STACK CONTROL</span>
+        <h2 class="h2">Built from the ground up</h2>
+        <p class="section__sub">From protocol stacks to AI algorithms — we own and control the entire drone command stack.</p>
+      </div>
+      <div class="cap__grid">
+        <div class="cap__card reveal">
+          <div class="cap__icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="14" height="14" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="22" y="4" width="14" height="14" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="4" y="22" width="14" height="14" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="22" y="22" width="14" height="14" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="20" cy="20" r="2.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="cap__title">Multi-Drone and Vehicle Control</h3>
+          <p class="cap__body">Simultaneous command of UAVs, UGVs, and RCWS from a single GCS interface. Full military fleet management with 24/7 operational readiness.</p>
+        </div>
+        <div class="cap__card reveal">
+          <div class="cap__icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="20" y1="5" x2="20" y2="35" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="5" y1="20" x2="35" y2="20" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="20" cy="20" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="cap__title">Precision Army Coordination</h3>
+          <p class="cap__body">Direct every autonomous unit with sub-second latency and zero ambiguity. Single platform, specific asset, or full drone fleet — total battlefield clarity.</p>
+        </div>
+        <div class="cap__card reveal">
+          <div class="cap__icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 4L36 12V28L20 36L4 28V12L20 4Z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M20 12L28 16V24L20 28L12 24V16L20 12Z" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="20" cy="20" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="cap__title">All-Weather Operational</h3>
+          <p class="cap__body">-30°C to +50°C. 95% humidity. Dust, shock, and EMI hardened. Military-grade software that does not flinch when the world does.</p>
+        </div>
+        <div class="cap__card reveal">
+          <div class="cap__icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="24" height="18" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="8" y1="20" x2="32" y2="20" stroke="currentColor" stroke-width="1.5"/>
+              <polyline points="13,14 17,17 21,12 27,16" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <line x1="20" y1="26" x2="20" y2="32" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="14" y1="32" x2="26" y2="32" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="cap__title">Deploy Anywhere</h3>
+          <p class="cap__body">Cloud, on-premises, or tactical edge. GCS performance scales from a single operator laptop to a distributed army command center — without compromise.</p>
+        </div>
+        <div class="cap__card reveal">
+          <div class="cap__icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 30L14 18L20 24L26 12L34 22" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <circle cx="34" cy="22" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="6" y1="34" x2="34" y2="34" stroke="currentColor" stroke-width="1"/>
+              <line x1="6" y1="6" x2="6" y2="34" stroke="currentColor" stroke-width="1"/>
+            </svg>
+          </div>
+          <h3 class="cap__title">Complete Threat Intelligence</h3>
+          <p class="cap__body">New drone signatures, enemy vehicle patterns, behavioral threat models. The AI system learns continuously — shrinking the gap between detection and autonomous response.</p>
+        </div>
+        <div class="cap__card reveal">
+          <div class="cap__icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="6" width="28" height="22" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="6" y1="12" x2="34" y2="12" stroke="currentColor" stroke-width="1"/>
+              <line x1="14" y1="6" x2="14" y2="28" stroke="currentColor" stroke-width="1"/>
+              <rect x="9" y="16" width="2" height="8" fill="currentColor"/>
+              <rect x="17" y="14" width="2" height="10" fill="currentColor"/>
+              <rect x="25" y="18" width="2" height="6" fill="currentColor"/>
+              <line x1="14" y1="34" x2="14" y2="28" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="26" y1="34" x2="26" y2="28" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="10" y1="34" x2="30" y2="34" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="cap__title">Detailed Mission Logs</h3>
+          <p class="cap__body">Full visibility into every command decision, handoff, and engagement. Complete audit trails satisfying the most stringent military compliance requirements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SYSTEMS STRIP -->
+  <section class="systems section" id="systems">
+    <div class="container">
+      <div class="section__header">
+        <span class="eyebrow">SUPPORTED PLATFORMS</span>
+        <h2 class="h2">One GCS. Any unmanned system.</h2>
+      </div>
+    </div>
+    <div class="systems__strip" id="systemsStrip">
+      <div class="systems__item">FIXED-WING UAV</div>
+      <div class="systems__item">MULTIROTOR DRONE</div>
+      <div class="systems__item">UNMANNED GROUND VEHICLE</div>
+      <div class="systems__item">AUTONOMOUS SURFACE VESSEL</div>
+      <div class="systems__item">REMOTE WEAPON STATION</div>
+      <div class="systems__item">LOITERING MUNITION</div>
+      <div class="systems__item">BORDER SURVEILLANCE DRONE</div>
+      <div class="systems__item">TACTICAL ROBOTICS</div>
+      <div class="systems__item">DRONE SWARM</div>
+      <div class="systems__item">FIXED-WING UAV</div>
+      <div class="systems__item">MULTIROTOR DRONE</div>
+      <div class="systems__item">UNMANNED GROUND VEHICLE</div>
+      <div class="systems__item">AUTONOMOUS SURFACE VESSEL</div>
+      <div class="systems__item">REMOTE WEAPON STATION</div>
+      <div class="systems__item">LOITERING MUNITION</div>
+      <div class="systems__item">BORDER SURVEILLANCE DRONE</div>
+      <div class="systems__item">TACTICAL ROBOTICS</div>
+      <div class="systems__item">DRONE SWARM</div>
+    </div>
+  </section>
+
+  <!-- PAGE-LEVEL DRONE CANVAS — fixed overlay, travels whole page -->
+  <!-- VTOL SECTION — canvas inside section, drone interactive on mouse -->
+  <section class="vtol-section" id="vtolSection">
+    <div class="vtol-section__bg"></div>
+    <div class="vtol-section__grid"></div>
+
+    <!-- Canvas fills right side of section -->
+    <canvas class="vtol-section__canvas" id="vtolScroll" data-glb="assets/models/vtol.glb"></canvas>
+
+    <div class="vtol-section__inner">
+      <div class="vtol-section__copy">
+        <span class="eyebrow">COMMAND IN FLIGHT</span>
+        <h2 class="h2">Deployed.<br />Airborne.<br /><span style="color:var(--clr-primary);">In Control.</span></h2>
+        <p class="body-l">From launch to landing, Vikasana Command maintains full telemetry, real-time video feed, and mission authority over every airborne asset — simultaneously.</p>
+        <div class="vtol-stats">
+          <div class="vtol-stat">
+            <span class="vtol-stat__num">48km</span>
+            <span class="vtol-stat__label">Datalink Range</span>
+          </div>
+          <div class="vtol-stat">
+            <span class="vtol-stat__num">4K</span>
+            <span class="vtol-stat__label">EO/IR Feed</span>
+          </div>
+          <div class="vtol-stat">
+            <span class="vtol-stat__num">&lt;80ms</span>
+            <span class="vtol-stat__label">Latency</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA BAND -->
+  <section class="ctaband section">
+    <div class="container">
+      <div class="ctaband__inner">
+        <div class="ctaband__text">
+          <h2 class="h2">Ready to deploy autonomous systems for your operations?</h2>
+          <p>Threat detected. Signature verified. Drone response deployed. In seconds.</p>
+        </div>
+        <div class="ctaband__actions">
+          <a href="reach.html" class="btn btn--primary">REQUEST A BRIEFING</a>
+          <a href="products.html" class="btn btn--ghost">VIEW PRODUCTS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img class="footer__logo footer__logo--dark" src="assets/nbg_dark_logo.png" alt="Vikasana Systems" />
+          <img class="footer__logo footer__logo--light" src="assets/nbg_light_logo.png" alt="Vikasana Systems" />
+          <p class="footer__tagline">One Control System. Infinite Possibilities.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <span class="footer__col-head">COMPANY</span>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-head">CONTACT</span>
+            <a href="reach.html">Clients</a>
+            <a href="reach.html">Investors</a>
+            <a href="reach.html">Quick Glance</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-head">LEGAL</span>
+            <a href="terms.html">Terms &amp; Conditions</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2025 Vikasana Systems. MSME Registered — Mangalore, India.</span>
+        <span class="footer__mono">VIKASANA CMD // SECURE CHANNEL</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="js/notif.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/hero-grid.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/vtol-scroll.js"></script>
+</body>
+</html>

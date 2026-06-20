@@ -1,0 +1,247 @@
+/* ============================================================
+   DOCUMENTS PAGE — fully fixed layout
+   ============================================================ */
+
+/* ── PAGE CATEGORIES ── */
+.docs-category {
+  margin-bottom: var(--sp-16);
+  padding-bottom: var(--sp-16);
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.docs-category:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.docs-category__header {
+  margin-bottom: var(--sp-8);
+}
+
+.docs-category__header .eyebrow {
+  display: block;
+  margin-bottom: var(--sp-3);
+}
+
+.docs-category__header .h2 {
+  margin-bottom: var(--sp-3);
+}
+
+.docs-category__sub {
+  color: var(--clr-text-muted);
+  font-size: var(--text-base);
+  line-height: 1.65;
+  max-width: 600px;
+}
+
+/* ── DOC GRID ── */
+.docs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  background-color: var(--clr-border);
+  border: 1px solid var(--clr-border);
+  margin-top: var(--sp-6);
+}
+
+/* ── DOC CARD ── */
+.doc-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  padding: var(--sp-6);
+  background-color: var(--clr-bg-card);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  border: 1px solid transparent;
+  transition: background-color var(--dur-base) ease,
+              border-color var(--dur-base) ease;
+  cursor: default;
+  margin: 1px;
+}
+
+.doc-card:hover {
+  background-color: #181818;
+  border-color: rgba(234,130,29,0.15);
+}
+
+.doc-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background-color: var(--clr-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--dur-slow) ease;
+}
+
+.doc-card:hover::after {
+  transform: scaleX(1);
+}
+
+/* ── CARD ICON ── */
+.doc-card__icon {
+  width: 28px;
+  height: 28px;
+  color: var(--clr-primary);
+  opacity: 0.65;
+  flex-shrink: 0;
+}
+
+.doc-card__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ── CARD BODY ── */
+.doc-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  flex: 1;
+}
+
+/* ── STATUS BADGE ── */
+.doc-card__status {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 2px var(--sp-2);
+  width: fit-content;
+  margin-bottom: var(--sp-1);
+}
+
+.doc-card__status--pending {
+  color: rgba(234, 130, 29, 0.75);
+  border: 1px solid rgba(234, 130, 29, 0.28);
+}
+
+.doc-card__status--available {
+  color: #4ade80;
+  border: 1px solid rgba(74, 222, 128, 0.4);
+}
+
+/* ── CARD TITLE ── */
+.doc-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+  color: var(--clr-text);
+}
+
+/* ── CARD DESCRIPTION ── */
+.doc-card__desc {
+  font-size: var(--text-sm);
+  color: var(--clr-text-muted);
+  line-height: 1.6;
+  margin-top: var(--sp-1);
+}
+
+/* ── OPEN LINK ── */
+.doc-card__open {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  color: var(--clr-primary);
+  text-decoration: none;
+  margin-top: auto;
+  padding-top: var(--sp-3);
+  transition: opacity var(--dur-fast);
+}
+
+.doc-card__open:hover {
+  opacity: 0.7;
+}
+
+/* Pending cards slightly dimmed */
+.doc-card--pending {
+  opacity: 0.78;
+}
+
+.doc-card--pending:hover {
+  opacity: 1;
+}
+
+/* ── DOCS REQUEST CTA ── */
+.docs-request {
+  background-color: var(--clr-bg-card);
+  border: 1px solid var(--clr-border);
+  border-top: 3px solid var(--clr-primary);
+  margin-top: var(--sp-12);
+  margin-bottom: var(--sp-12);
+  /* Padding directly on wrapper — belt-and-suspenders */
+  padding: 40px 48px;
+}
+
+.docs-request__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.docs-request__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  max-width: 580px;
+}
+
+.docs-request__text .eyebrow {
+  display: block;
+}
+
+.docs-request__text .h2 {
+  font-size: var(--text-2xl);
+}
+
+.docs-request .body-l {
+  color: var(--clr-text-muted);
+  font-size: var(--text-base);
+  line-height: 1.65;
+}
+
+.docs-request__actions {
+  display: flex;
+  gap: var(--sp-4);
+  flex-shrink: 0;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .docs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .docs-grid {
+    grid-template-columns: 1fr;
+  }
+  .docs-request__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .docs-request .body-l {
+  color: var(--clr-text-muted);
+  font-size: var(--text-base);
+  line-height: 1.65;
+}
+
+.docs-request__actions {
+    width: 100%;
+    flex-direction: column;
+  }
+  .docs-request__actions .btn {
+    text-align: center;
+  }
+}
