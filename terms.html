@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms &amp; Conditions — Vikasana Systems</title>
+  <link rel="icon" type="image/png" href="assets/primarylogo.png" />
+  <meta name="description" content="Terms and Conditions for Vikasana Systems — early-stage company disclosure, open-source graphics notice, and usage terms." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/loader.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/terms.css" />
+</head>
+<body class="body--loading has-notif">
+
+  <!-- LOADING SCREEN -->
+  <div id="pageLoader">
+    <div class="loader__ping"></div>
+    <div class="loader__ping"></div>
+    <div class="loader__ping"></div>
+    <div class="loader__bracket loader__bracket--tl"></div>
+    <div class="loader__bracket loader__bracket--tr"></div>
+    <div class="loader__bracket loader__bracket--bl"></div>
+    <div class="loader__bracket loader__bracket--br"></div>
+    <div class="loader__inner">
+      <div class="loader__brand">
+        <img class="loader__logo" src="assets/nbg_dark_logo.png" alt="Vikasana Systems" />
+        <span class="loader__brand-text">Vikasana Systems</span>
+      </div>
+      <div class="loader__log" id="loaderLines"></div>
+      <div class="loader__progress-wrap">
+        <div class="loader__progress-header">
+          <span class="loader__progress-label">SYSTEM BOOT</span>
+          <span class="loader__pct" id="loaderPct">0%</span>
+        </div>
+        <div class="loader__bar-track">
+          <div class="loader__bar" id="loaderBar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTIFICATION TICKER -->
+  <div id="notifBar">
+    <span class="notif-prefix">&#9658; VIKASANA</span>
+    <div class="notif-track-wrap">
+      <div id="notifTrack"></div>
+    </div>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <img class="nav__logo nav__logo--dark" src="assets/nbg_dark_logo.png" alt="Vikasana Systems" />
+        <img class="nav__logo nav__logo--light" src="assets/nbg_light_logo.png" alt="Vikasana Systems" />
+      </a>
+      <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html" class="nav__link">HOME</a></li>
+        <li><a href="products.html" class="nav__link">PRODUCTS</a></li>
+        <li><a href="about.html" class="nav__link">ABOUT</a></li>
+        <li><a href="reach.html" class="nav__link">REACH US</a></li>
+        <li><a href="documents.html" class="nav__link">DOCUMENTS</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero page-hero--short">
+    <div class="container">
+      <div class="page-hero__content">
+        <div class="page-hero__eyebrow">
+          <span class="eyebrow">LEGAL // VIKASANA SYSTEMS</span>
+        </div>
+        <h1>Terms &amp;<br /><span style="color: var(--clr-primary);">Conditions</span></h1>
+        <p>Please read these terms carefully. This website belongs to an early-stage company. Several notices below are important disclosures you should be aware of before engaging with our content.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EARLY STAGE NOTICE BANNER -->
+  <div class="terms-banner">
+    <div class="container">
+      <div class="terms-banner__inner">
+        <div class="terms-banner__icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+            <path d="M12 2L2 20h20L12 2Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <line x1="12" y1="9" x2="12" y2="14" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="12" cy="17" r="0.5" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+          </svg>
+        </div>
+        <p>
+          <strong>Important Notice:</strong> Vikasana Systems is an early-stage company currently in active product development. The content on this website — including product names, capabilities, and visuals — represents our intended direction and is subject to change. Nothing on this website constitutes a confirmed product, service offer, or commercial contract.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TERMS CONTENT -->
+  <section class="section">
+    <div class="container">
+      <div class="terms-layout">
+
+        <!-- SIDEBAR TOC -->
+        <nav class="terms-toc" id="termsToc">
+          <span class="terms-toc__head">ON THIS PAGE</span>
+          <ul>
+            <li><a href="#section-company" class="terms-toc__link">1. Company Information</a></li>
+            <li><a href="#section-early-stage" class="terms-toc__link">2. Early-Stage Disclosure</a></li>
+            <li><a href="#section-graphics" class="terms-toc__link">3. Graphics and 3D Assets</a></li>
+            <li><a href="#section-ip" class="terms-toc__link">4. Intellectual Property</a></li>
+            <li><a href="#section-website" class="terms-toc__link">5. Website Use</a></li>
+            <li><a href="#section-liability" class="terms-toc__link">6. Limitation of Liability</a></li>
+            <li><a href="#section-data" class="terms-toc__link">7. Data and Privacy</a></li>
+            <li><a href="#section-jurisdiction" class="terms-toc__link">8. Governing Law</a></li>
+            <li><a href="#section-changes" class="terms-toc__link">9. Changes to Terms</a></li>
+            <li><a href="#section-contact" class="terms-toc__link">10. Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- MAIN TERMS TEXT -->
+        <div class="terms-body">
+
+          <div class="terms-meta">
+            <span class="terms-meta__item">Effective Date: 2025</span>
+            <span class="terms-meta__sep">//</span>
+            <span class="terms-meta__item">Vikasana Systems Pvt. Ltd.</span>
+            <span class="terms-meta__sep">//</span>
+            <span class="terms-meta__item">Mangalore, Karnataka, India</span>
+          </div>
+
+          <!-- 1 -->
+          <div class="terms-section" id="section-company">
+            <h2 class="terms-h2">1. Company Information</h2>
+            <p>
+              This website is operated by <strong>Vikasana Systems</strong> (MSME Registered, "Vikasana Systems", "we", "us", or "our"), a company incorporated and registered in India. We are a <strong>Micro, Small, and Medium Enterprise (MSME)</strong> registered under the Government of India's MSME framework, headquartered in <strong>Mangalore (Mangaluru), Karnataka, India</strong>.
+            </p>
+            <p>
+              Vikasana Systems was founded in <strong>2025</strong> and is engaged in the research, design, and development of ground control system (GCS) software for unmanned vehicles and autonomous systems intended for defense and security applications.
+            </p>
+          </div>
+
+          <!-- 2 -->
+          <div class="terms-section" id="section-early-stage">
+            <h2 class="terms-h2">2. Early-Stage Company Disclosure</h2>
+            <div class="terms-highlight">
+              <p>
+                Vikasana Systems is an <strong>early-stage company</strong>. Our products are currently in active development and have not yet been released for commercial or operational deployment. All product names, features, specifications, timelines, and capability descriptions referenced on this website are <strong>indicative of our intended direction</strong> and do not represent confirmed, finalized, or commercially available products.
+              </p>
+            </div>
+            <p>
+              By accessing this website, you acknowledge and accept that:
+            </p>
+            <ul class="terms-list">
+              <li>Product features, names, and technical specifications described herein are subject to change without notice.</li>
+              <li>No content on this website constitutes a binding offer, product warranty, service agreement, or guarantee of any capability.</li>
+              <li>Statements regarding operational performance (latency, temperature ranges, encryption standards, etc.) describe design targets and are not certified results of a production system.</li>
+              <li>Publishing timelines and product availability are aspirational and may be revised at any time based on development progress, regulatory requirements, or business decisions.</li>
+              <li>This website serves as an informational and outreach platform only. Any formal engagement with Vikasana Systems — procurement, investment, or partnership — requires a separately executed written agreement.</li>
+            </ul>
+          </div>
+
+          <!-- 3 -->
+          <div class="terms-section" id="section-graphics">
+            <h2 class="terms-h2">3. Graphics, Visual Assets, and 3D Models</h2>
+            <div class="terms-highlight terms-highlight--amber">
+              <p>
+                <strong>Placeholder Asset Notice:</strong> All graphical content, illustrations, 3D models, renders, background images, and visual assets currently displayed on this website are <strong>sourced from open-source, public-domain, or permissively licensed resources</strong> and are being used as placeholder representations for development and demonstration purposes only.
+              </p>
+            </div>
+            <p>
+              These placeholder assets <strong>do not represent Vikasana Systems' actual products, hardware, or proprietary designs</strong>. They are used solely to communicate the nature and category of the technologies we are developing.
+            </p>
+            <p>
+              Upon the official public launch of Vikasana Systems' products and commercial platform, <strong>all placeholder graphics, 3D models, background imagery, and illustrative assets will be replaced</strong> with original, proprietary content owned by or licensed exclusively to Vikasana Systems.
+            </p>
+            <p>
+              We make no claims of ownership over any third-party visual assets currently displayed on this website. Attribution is available on request for any specific asset. If you are a rights holder and believe an asset has been used incorrectly, please contact us at the address provided in Section 10.
+            </p>
+            <p>
+              The Three.js based 3D drone model displayed on the homepage is <strong>a procedurally generated placeholder model</strong> created in-house for this website. It does not represent any real, existing, or planned Vikasana Systems hardware product.
+            </p>
+          </div>
+
+          <!-- 4 -->
+          <div class="terms-section" id="section-ip">
+            <h2 class="terms-h2">4. Intellectual Property</h2>
+            <p>
+              The Vikasana Systems name, logo, brand identity, product names (Vikasana Command, Vikasana Atlas, Vikasana Sentinel, Vikasana Forge), tagline ("One Control System. Infinite Possibilities."), and all original written content on this website are the exclusive intellectual property of Vikasana Systems and are protected under applicable Indian and international intellectual property laws.
+            </p>
+            <p>
+              Unauthorized reproduction, distribution, modification, or commercial use of any proprietary content on this website is strictly prohibited without prior written consent from Vikasana Systems.
+            </p>
+            <p>
+              All software, algorithms, protocols, and platform architecture described on this website — whether described as planned, in development, or intended — are considered confidential trade information of Vikasana Systems and must not be replicated, reverse-engineered, or disclosed to third parties without written authorization.
+            </p>
+          </div>
+
+          <!-- 5 -->
+          <div class="terms-section" id="section-website">
+            <h2 class="terms-h2">5. Website Use</h2>
+            <p>
+              This website is provided for informational purposes. You may use it to learn about our company, products-in-development, and to initiate contact with us. You agree not to:
+            </p>
+            <ul class="terms-list">
+              <li>Scrape, copy, or reproduce website content for commercial purposes without written permission.</li>
+              <li>Attempt to access any non-public systems, admin interfaces, or backend infrastructure associated with this website.</li>
+              <li>Submit false, misleading, or fraudulent information through our contact or inquiry forms.</li>
+              <li>Use this website in any manner that violates applicable laws, regulations, or the rights of third parties.</li>
+              <li>Represent information from this website as confirmed fact in any external publication without appropriate qualification that these are stated intentions of an early-stage company.</li>
+            </ul>
+          </div>
+
+          <!-- 6 -->
+          <div class="terms-section" id="section-liability">
+            <h2 class="terms-h2">6. Limitation of Liability</h2>
+            <p>
+              To the maximum extent permitted by applicable law, Vikasana Systems shall not be liable for any direct, indirect, incidental, consequential, or special damages arising from:
+            </p>
+            <ul class="terms-list">
+              <li>Your use of or reliance on information contained on this website.</li>
+              <li>Any investment, procurement, or business decision made based on content on this website without formal written agreement.</li>
+              <li>Inaccuracies, errors, or omissions in website content, including product specifications and timeline information.</li>
+              <li>Website downtime, technical errors, or unavailability of this website.</li>
+            </ul>
+            <p>
+              This website and all content are provided "as is" and "as available" without warranties of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.
+            </p>
+          </div>
+
+          <!-- 7 -->
+          <div class="terms-section" id="section-data">
+            <h2 class="terms-h2">7. Data Collection and Privacy</h2>
+            <p>
+              When you submit an inquiry through our contact forms, we collect the personal information you provide (name, organization, email address, and your message). This information is used solely to respond to your inquiry and for legitimate business communication.
+            </p>
+            <p>
+              We do not sell, rent, or share your personal information with third parties for marketing purposes. Information submitted through our forms is retained for the duration required to evaluate and respond to your inquiry, or as required by applicable law.
+            </p>
+            <p>
+              This website may use basic analytics to understand visitor traffic patterns. No personally identifiable visitor data is collected through website analytics.
+            </p>
+            <p>
+              As an early-stage company, our formal Privacy Policy is under development and will be published in full prior to any commercial product launch. In the interim, you may contact us to request information about how your submitted data is handled.
+            </p>
+          </div>
+
+          <!-- 8 -->
+          <div class="terms-section" id="section-jurisdiction">
+            <h2 class="terms-h2">8. Governing Law and Jurisdiction</h2>
+            <p>
+              These Terms and Conditions are governed by and construed in accordance with the laws of the <strong>Republic of India</strong>. Any disputes arising from these terms or your use of this website shall be subject to the exclusive jurisdiction of the competent courts located in <strong>Mangalore (Mangaluru), Karnataka, India</strong>.
+            </p>
+          </div>
+
+          <!-- 9 -->
+          <div class="terms-section" id="section-changes">
+            <h2 class="terms-h2">9. Changes to These Terms</h2>
+            <p>
+              Vikasana Systems reserves the right to modify, update, or replace these Terms and Conditions at any time without prior notice. As an early-stage company undergoing rapid development, updates to these terms should be expected as our products, legal posture, and business relationships evolve.
+            </p>
+            <p>
+              Continued use of this website following any revision constitutes acceptance of the updated terms. We encourage you to review this page periodically. The effective date at the top of this document will be updated with each revision.
+            </p>
+          </div>
+
+          <!-- 10 -->
+          <div class="terms-section" id="section-contact">
+            <h2 class="terms-h2">10. Contact</h2>
+            <p>
+              For any questions, concerns, asset attribution requests, or formal correspondence regarding these Terms and Conditions, please contact:
+            </p>
+            <div class="terms-contact-block">
+              <div class="terms-contact__row">
+                <span class="terms-contact__key">Company</span>
+                <span class="terms-contact__val">Vikasana Systems</span>
+              </div>
+              <div class="terms-contact__row">
+                <span class="terms-contact__key">Location</span>
+                <span class="terms-contact__val">Mangalore (Mangaluru), Karnataka, India</span>
+              </div>
+              <div class="terms-contact__row">
+                <span class="terms-contact__key">Registration</span>
+                <span class="terms-contact__val">MSME Registered Enterprise, India (Est. 2025)</span>
+              </div>
+              <div class="terms-contact__row">
+                <span class="terms-contact__key">Inquiries</span>
+                <span class="terms-contact__val"><a href="reach.html" style="color: var(--clr-primary);">Contact Form — Reach Us Page</a></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img class="footer__logo footer__logo--dark" src="assets/nbg_dark_logo.png" alt="Vikasana Systems" />
+          <img class="footer__logo footer__logo--light" src="assets/nbg_light_logo.png" alt="Vikasana Systems" />
+          <p class="footer__tagline">One Control System. Infinite Possibilities.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <span class="footer__col-head">COMPANY</span>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-head">CONTACT</span>
+            <a href="reach.html">Clients</a>
+            <a href="reach.html">Investors</a>
+            <a href="reach.html">Quick Glance</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-head">LEGAL</span>
+            <a href="terms.html">Terms &amp; Conditions</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2025 Vikasana Systems. MSME Registered — Mangalore, India.</span>
+        <span class="footer__mono">VIKASANA CMD // SECURE CHANNEL</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/loader.js"></script>
+  <script src="js/notif.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/terms.js"></script>
+</body>
+</html>

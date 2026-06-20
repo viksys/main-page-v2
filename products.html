@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products — Vikasana Systems</title>
+  <link rel="icon" type="image/png" href="assets/primarylogo.png" />
+  <meta name="description" content="Vikasana Systems product lineup — military-grade GCS command platform for unmanned systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/loader.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body class="body--loading has-notif">
+
+  <!-- LOADING SCREEN -->
+  <div id="pageLoader">
+    <div class="loader__ping"></div>
+    <div class="loader__ping"></div>
+    <div class="loader__ping"></div>
+    <div class="loader__bracket loader__bracket--tl"></div>
+    <div class="loader__bracket loader__bracket--tr"></div>
+    <div class="loader__bracket loader__bracket--bl"></div>
+    <div class="loader__bracket loader__bracket--br"></div>
+    <div class="loader__inner">
+      <div class="loader__brand">
+        <img class="loader__logo" src="assets/nbg_dark_logo.png" alt="Vikasana Systems" />
+        <span class="loader__brand-text">Vikasana Systems</span>
+      </div>
+      <div class="loader__log" id="loaderLines"></div>
+      <div class="loader__progress-wrap">
+        <div class="loader__progress-header">
+          <span class="loader__progress-label">SYSTEM BOOT</span>
+          <span class="loader__pct" id="loaderPct">0%</span>
+        </div>
+        <div class="loader__bar-track">
+          <div class="loader__bar" id="loaderBar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTIFICATION TICKER -->
+  <div id="notifBar">
+    <span class="notif-prefix">&#9658; VIKASANA</span>
+    <div class="notif-track-wrap">
+      <div id="notifTrack"></div>
+    </div>
+  </div>
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <img class="nav__logo nav__logo--dark" src="assets/nbg_dark_logo.png" alt="Vikasana Systems" />
+        <img class="nav__logo nav__logo--light" src="assets/nbg_light_logo.png" alt="Vikasana Systems" />
+      </a>
+      <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html" class="nav__link">HOME</a></li>
+        <li><a href="products.html" class="nav__link nav__link--active">PRODUCTS</a></li>
+        <li><a href="about.html" class="nav__link">ABOUT</a></li>
+        <li><a href="reach.html" class="nav__link">REACH US</a></li>
+        <li><a href="documents.html" class="nav__link">DOCUMENTS</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO with tablet model right side -->
+  <section class="page-hero" style="position:relative;overflow:hidden;">
+    <canvas id="tabletCanvas" data-glb="assets/models/tablet.glb"
+      style="position:absolute;top:0;right:0;width:50%;height:100%;display:block;pointer-events:none;z-index:1;"></canvas>
+    <div class="container" style="position:relative;z-index:2;">
+      <div class="page-hero__content">
+        <div class="page-hero__eyebrow">
+          <span class="eyebrow">PRODUCTS // VIKASANA SYSTEMS</span>
+        </div>
+        <h1>Our<br /><span style="color: var(--clr-primary);">Platforms</span></h1>
+        <p>Precision-engineered command software for every unmanned system in the modern battlefield — built entirely in-house, with zero vendor dependency.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="product-grid">
+
+        <!-- VIKASANA COMMAND -->
+        <div class="product-card product-card--featured reveal" style="padding:40px 48px;box-sizing:border-box;">
+          <span class="product-card__num">01</span>
+          <div class="product-card__badge">PUBLISHING SOON</div>
+          <h3>Vikasana<br />Command</h3>
+          <p>The flagship unified ground control station for multi-domain UXV fleet management. Single-operator or distributed command center deployment. Scales from one UAV to a full autonomous strike package.</p>
+          <div class="product-card__specs">
+            <div class="product-card__spec">Unified GCS for UAVs, UGVs, RCWS, ASVs</div>
+            <div class="product-card__spec">Sub-100ms command latency</div>
+            <div class="product-card__spec">AES-256 encrypted datalink</div>
+            <div class="product-card__spec">Cloud, edge, or field deployment</div>
+          </div>
+        </div>
+
+        <!-- VIKASANA ATLAS -->
+        <div class="product-card product-card--coming reveal" style="padding:32px;box-sizing:border-box;">
+          <span class="product-card__num">02</span>
+          <div class="product-card__badge product-card__badge--soon">PUBLISHING SOON</div>
+          <h3>Vikasana<br />Atlas</h3>
+          <p>Theater-level situational awareness and mission planning suite. Real-time terrain overlay, autonomous route generation, and multi-asset coordination from a single map interface.</p>
+          <div class="product-card__specs">
+            <div class="product-card__spec">Live multi-drone tracking</div>
+            <div class="product-card__spec">Autonomous route deconfliction</div>
+            <div class="product-card__spec">Terrain and weather integration</div>
+            <div class="product-card__spec">Offline-capable edge mode</div>
+          </div>
+        </div>
+
+        <!-- VIKASANA SENTINEL -->
+        <div class="product-card product-card--coming reveal" style="padding:32px;box-sizing:border-box;">
+          <span class="product-card__num">03</span>
+          <div class="product-card__badge product-card__badge--soon">PUBLISHING SOON</div>
+          <h3>Vikasana<br />Sentinel</h3>
+          <p>AI-powered threat detection and autonomous response engine. Learns continuously from drone signatures, vehicle patterns, and behavioral threat models. Shrinks detection-to-response time to seconds.</p>
+          <div class="product-card__specs">
+            <div class="product-card__spec">Continuous self-learning threat AI</div>
+            <div class="product-card__spec">Enemy drone signature library</div>
+            <div class="product-card__spec">Autonomous engagement decision support</div>
+            <div class="product-card__spec">Full audit trail logging</div>
+          </div>
+        </div>
+
+        <!-- VIKASANA FORGE -->
+        <div class="product-card product-card--coming reveal" style="padding:32px;box-sizing:border-box;">
+          <span class="product-card__num">04</span>
+          <div class="product-card__badge product-card__badge--soon">PUBLISHING SOON</div>
+          <h3>Vikasana<br />Forge</h3>
+          <p>Protocol adaptation and integration layer. Connects Vikasana Command to any UXV platform regardless of vendor. Supports MAVLink, DIS/HLA, custom RF protocols, and proprietary military datalinks.</p>
+          <div class="product-card__specs">
+            <div class="product-card__spec">MAVLink 2.0 native</div>
+            <div class="product-card__spec">Custom RF protocol bridging</div>
+            <div class="product-card__spec">Third-party UXV onboarding</div>
+            <div class="product-card__spec">Zero vendor lock-in architecture</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- NOTICE BAND -->
+      <div style="
+        margin-top: 1px;
+        background-color: var(--clr-bg-card);
+        border: 1px solid var(--clr-border);
+        border-top: none;
+        padding: var(--sp-6) var(--sp-8);
+        display: flex;
+        align-items: center;
+        gap: var(--sp-4);
+      ">
+        <span class="hero__dot"></span>
+        <p style="font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.1em; color: var(--clr-text-muted); text-transform: uppercase;">
+          All platforms are currently in development. Contact us to receive early access briefings and integration roadmap details.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- CTA -->
+  <section class="ctaband section">
+    <div class="container">
+      <div class="ctaband__inner">
+        <div class="ctaband__text">
+          <h2 class="h2">Interested in early access or integration?</h2>
+          <p>Procurement teams, system integrators, and defense contractors welcome.</p>
+        </div>
+        <div class="ctaband__actions">
+          <a href="reach.html" class="btn btn--primary">CONTACT US</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img class="footer__logo footer__logo--dark" src="assets/nbg_dark_logo.png" alt="Vikasana Systems" />
+          <img class="footer__logo footer__logo--light" src="assets/nbg_light_logo.png" alt="Vikasana Systems" />
+          <p class="footer__tagline">One Control System. Infinite Possibilities.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <span class="footer__col-head">COMPANY</span>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-head">CONTACT</span>
+            <a href="reach.html">Clients</a>
+            <a href="reach.html">Investors</a>
+            <a href="reach.html">Quick Glance</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-head">LEGAL</span>
+            <a href="terms.html">Terms &amp; Conditions</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2025 Vikasana Systems. MSME Registered — Mangalore, India.</span>
+        <span class="footer__mono">VIKASANA CMD // SECURE CHANNEL</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/loader.js"></script>
+  <script src="js/notif.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="js/model3d.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/scroll.js"></script>
+</body>
+</html>

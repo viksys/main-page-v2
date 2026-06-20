@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documents — Vikasana Systems</title>
+  <meta name="description" content="Official documents — legal, compliance, company, and investor materials." />
+  <link rel="icon" type="image/png" href="assets/primarylogo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/loader.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/terms.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/docs.css" />
+</head>
+<body class="body--loading has-notif">
+
+  <!-- LOADER -->
+  <div id="pageLoader">
+    <div class="loader__ping"></div><div class="loader__ping"></div><div class="loader__ping"></div>
+    <div class="loader__bracket loader__bracket--tl"></div>
+    <div class="loader__bracket loader__bracket--tr"></div>
+    <div class="loader__bracket loader__bracket--bl"></div>
+    <div class="loader__bracket loader__bracket--br"></div>
+    <div class="loader__inner">
+      <div class="loader__brand">
+        <img class="loader__logo" src="assets/nbg_dark_logo.png" alt="Vikasana Systems" />
+        <span class="loader__brand-text">Vikasana Systems</span>
+      </div>
+      <div class="loader__log" id="loaderLines"></div>
+      <div class="loader__progress-wrap">
+        <div class="loader__progress-header">
+          <span class="loader__progress-label">SYSTEM BOOT</span>
+          <span class="loader__pct" id="loaderPct">0%</span>
+        </div>
+        <div class="loader__bar-track"><div class="loader__bar" id="loaderBar"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTIFICATION BAR -->
+  <div id="notifBar">
+    <span class="notif-prefix">&#9658; VIKASANA</span>
+    <div class="notif-track-wrap"><div id="notifTrack"></div></div>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <img class="nav__logo nav__logo--dark" src="assets/nbg_dark_logo.png" alt="Vikasana Systems" />
+      </a>
+      <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html" class="nav__link">HOME</a></li>
+        <li><a href="products.html" class="nav__link">PRODUCTS</a></li>
+        <li><a href="about.html" class="nav__link">ABOUT</a></li>
+        <li><a href="reach.html" class="nav__link">REACH US</a></li>
+        <li><a href="documents.html" class="nav__link nav__link--active">DOCUMENTS</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero page-hero--short">
+    <div class="container">
+      <div class="page-hero__content">
+        <span class="eyebrow">DOCUMENTS // VIKASANA SYSTEMS</span>
+        <h1>Official<br /><span style="color:var(--clr-primary);">Documents</span></h1>
+        <p>All legal, compliance, company, and investor materials in one place. Documents are provided for transparency and due diligence. Links marked PENDING are being drafted.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTICE BANNER -->
+  <div class="terms-banner">
+    <div class="container">
+      <div class="terms-banner__inner">
+        <div class="terms-banner__icon">
+          <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+            <path d="M12 2L2 20h20L12 2Z" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="12" y1="9" x2="12" y2="14" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="12" cy="17" r="0.5" fill="currentColor" stroke="currentColor"/>
+          </svg>
+        </div>
+        <p><strong>Early-stage notice:</strong> All documents are in preparation. Clicking a PENDING card does nothing — documents will be linked as they are completed and cleared for release.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PDF ICON SVG (reused across all cards via inline) -->
+  <svg style="display:none">
+    <symbol id="ico-pdf" viewBox="0 0 32 32" fill="none">
+      <rect x="5" y="2" width="16" height="28" rx="1" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M21 2l6 6h-6V2Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+      <line x1="9" y1="13" x2="19" y2="13" stroke="currentColor" stroke-width="1.2"/>
+      <line x1="9" y1="17" x2="19" y2="17" stroke="currentColor" stroke-width="1.2"/>
+      <line x1="9" y1="21" x2="15" y2="21" stroke="currentColor" stroke-width="1.2"/>
+    </symbol>
+  </svg>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- ── CATEGORY 01: LEGAL ── -->
+      <div class="docs-category reveal">
+        <div class="docs-category__header">
+          <span class="eyebrow">CATEGORY 01</span>
+          <h2 class="h2">Legal &amp; Compliance</h2>
+          <p class="docs-category__sub">Core legal documents required for any formal engagement, procurement, or investment.</p>
+        </div>
+        <div class="docs-grid">
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Certificate of MSME Registration</h3>
+              <p class="doc-card__desc">Official MSME registration certificate from the Government of India. Confirms entity status and registration number.</p>
+            </div>
+          </div>
+
+          <div class="doc-card">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--available">AVAILABLE</span>
+              <h3 class="doc-card__title">Terms &amp; Conditions</h3>
+              <p class="doc-card__desc">Website and service terms governing use of Vikasana Systems platforms, content, and communications.</p>
+            </div>
+            <a href="terms.html" class="doc-card__open" target="_blank">VIEW DOCUMENT ↗</a>
+          </div>
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Privacy Policy</h3>
+              <p class="doc-card__desc">Data collection, processing, and retention practices for website visitors and inquiry submissions.</p>
+            </div>
+          </div>
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Intellectual Property Notice</h3>
+              <p class="doc-card__desc">Statement of IP ownership covering software, protocols, trademarks, and proprietary algorithms developed by Vikasana Systems.</p>
+            </div>
+          </div>
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Country Restriction &amp; Export Control Policy</h3>
+              <p class="doc-card__desc">Countries and entities to which Vikasana Systems products may be sold, in compliance with SCOMET and Wassenaar regulations.</p>
+            </div>
+          </div>
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">End User License Agreement (EULA)</h3>
+              <p class="doc-card__desc">License terms governing the use of Vikasana Command and associated software by authorised end users.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── CATEGORY 02: COMPANY ── -->
+      <div class="docs-category reveal">
+        <div class="docs-category__header">
+          <span class="eyebrow">CATEGORY 02</span>
+          <h2 class="h2">Company &amp; Team</h2>
+          <p class="docs-category__sub">Know who we are — founders, team structure, and company background.</p>
+        </div>
+        <div class="docs-grid">
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Team &amp; Founders Profile</h3>
+              <p class="doc-card__desc">Profiles of the founding team — backgrounds, roles, and relevant experience in defense, embedded systems, and autonomous systems.</p>
+            </div>
+          </div>
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Company History &amp; Timeline</h3>
+              <p class="doc-card__desc">Formation, MSME registration, key milestones, and development roadmap from 2025 to present.</p>
+            </div>
+          </div>
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Advisors &amp; Partners</h3>
+              <p class="doc-card__desc">Strategic advisors, institutional partners, and technology collaborators supporting Vikasana Systems.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── CATEGORY 03: INVESTOR ── -->
+      <div class="docs-category reveal">
+        <div class="docs-category__header">
+          <span class="eyebrow">CATEGORY 03</span>
+          <h2 class="h2">Investor Materials</h2>
+          <p class="docs-category__sub">For prospective investors, funds, and strategic partners. NDA required for financial and pitch documents.</p>
+        </div>
+        <div class="docs-grid">
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Pitch Deck</h3>
+              <p class="doc-card__desc">Full investor presentation — problem, solution, market size, product roadmap, business model, traction, and ask. Available after NDA.</p>
+            </div>
+          </div>
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Market Analysis Report</h3>
+              <p class="doc-card__desc">Global UXV GCS market sizing, India defense modernisation pipeline, competitive landscape, and Vikasana's addressable opportunity.</p>
+            </div>
+          </div>
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Financial Projections</h3>
+              <p class="doc-card__desc">5-year revenue model, unit economics, burn rate, and funding milestone map. Available under NDA to qualified investors.</p>
+            </div>
+          </div>
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Non-Disclosure Agreement (NDA)</h3>
+              <p class="doc-card__desc">Standard bilateral NDA for sharing confidential technical and financial information with investors, partners, and prospective clients.</p>
+            </div>
+          </div>
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Investor Information Memorandum</h3>
+              <p class="doc-card__desc">Formal IM covering company overview, risk factors, use of funds, governance structure, and exit considerations.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── CATEGORY 04: TECHNICAL ── -->
+      <div class="docs-category reveal">
+        <div class="docs-category__header">
+          <span class="eyebrow">CATEGORY 04</span>
+          <h2 class="h2">Technical &amp; Product</h2>
+          <p class="docs-category__sub">For integration teams, procurement authorities, and system architects.</p>
+        </div>
+        <div class="docs-grid">
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Vikasana Command — Product Datasheet</h3>
+              <p class="doc-card__desc">Specifications, supported UXV categories, deployment modes, latency targets, environmental ratings, and integration requirements.</p>
+            </div>
+          </div>
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">GCS Platform Architecture Overview</h3>
+              <p class="doc-card__desc">Protocol stack, AI inference layer, security model, and datalink architecture of the Vikasana Command platform.</p>
+            </div>
+          </div>
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Protocol Integration Guide</h3>
+              <p class="doc-card__desc">Supported protocols (MAVLink 2.0, DIS/HLA, custom RF), integration requirements, and onboarding process for third-party UXV platforms.</p>
+            </div>
+          </div>
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Security &amp; Encryption Specification</h3>
+              <p class="doc-card__desc">AES-256 datalink implementation, zero-trust architecture, key management, and audit trail architecture.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── CATEGORY 05: GOVERNMENT ── -->
+      <div class="docs-category reveal">
+        <div class="docs-category__header">
+          <span class="eyebrow">CATEGORY 05</span>
+          <h2 class="h2">Government &amp; Procurement</h2>
+          <p class="docs-category__sub">Specific to defense procurement authorities, government agencies, and institutional buyers.</p>
+        </div>
+        <div class="docs-grid">
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Defence Procurement Capability Statement</h3>
+              <p class="doc-card__desc">Capability statement for MoD, DRDO, and armed forces procurement channels. Covers iDEX/DIO alignment and Atmanirbhar Bharat positioning.</p>
+            </div>
+          </div>
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Compliance &amp; Certification Roadmap</h3>
+              <p class="doc-card__desc">Planned certifications — STQC, BIS, DSCI, ISO 27001 — and compliance milestones prior to commercial deployment.</p>
+            </div>
+          </div>
+
+          <div class="doc-card doc-card--pending">
+            <div class="doc-card__icon"><svg><use href="#ico-pdf"/></svg></div>
+            <div class="doc-card__body">
+              <span class="doc-card__status doc-card__status--pending">PENDING</span>
+              <h3 class="doc-card__title">Authorised User &amp; Whom We Sell Policy</h3>
+              <p class="doc-card__desc">Authorised buyer categories, prohibited end-users, and vetting process. Includes full country restriction summary.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── REQUEST CTA ── -->
+      <div class="docs-request" style="padding:40px 48px;box-sizing:border-box;">
+        <div class="docs-request__inner">
+          <div class="docs-request__text">
+            <span class="eyebrow">NEED A DOCUMENT?</span>
+            <h2 class="h2">Request access to restricted materials</h2>
+            <p class="body-l">Pitch decks, financial models, NDAs, and technical architecture documents are available on request to verified parties.</p>
+          </div>
+          <div class="docs-request__actions">
+            <a href="reach.html" class="btn btn--primary">REQUEST DOCUMENTS</a>
+            <a href="reach.html" class="btn btn--ghost">INVESTOR PORTAL</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img class="footer__logo footer__logo--dark" src="assets/nbg_dark_logo.png" alt="Vikasana Systems" />
+          <p class="footer__tagline">One Control System. Infinite Possibilities.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <span class="footer__col-head">COMPANY</span>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-head">CONTACT</span>
+            <a href="reach.html">Clients</a>
+            <a href="reach.html">Investors</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-head">LEGAL</span>
+            <a href="terms.html">Terms &amp; Conditions</a>
+            <a href="documents.html">Documents</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2025 Vikasana Systems. MSME Registered — Mangalore, India. (Pvt. Ltd. incorporation in progress.)</span>
+        <span class="footer__mono">VIKASANA CMD // SECURE CHANNEL</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/loader.js"></script>
+  <script src="js/notif.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/scroll.js"></script>
+</body>
+</html>
