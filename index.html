@@ -269,7 +269,6 @@
     <div class="vtol-section__grid"></div>
 
     <!-- Canvas fills right side of section -->
-    <canvas class="vtol-section__canvas" id="vtolScroll" data-glb="assets/models/vtol.glb"></canvas>
 
     <div class="vtol-section__inner">
       <div class="vtol-section__copy">
@@ -331,6 +330,23 @@
             <a href="reach.html">Quick Glance</a>
           </div>
           <div class="footer__col">
+            <span class="footer__col-head footer__col-head--small">APPEARANCE</span>
+            <div class="footer__theme" data-theme-toggle>
+              <button class="theme-opt" data-theme-opt="dark" title="Dark theme">
+                <svg viewBox="0 0 12 12" fill="currentColor"><path d="M6 1a5 5 0 1 0 4.33 7.5A4 4 0 0 1 6 1z"/></svg>
+                DARK
+              </button>
+              <button class="theme-opt" data-theme-opt="light" title="Light theme">
+                <svg viewBox="0 0 12 12" fill="currentColor"><circle cx="6" cy="6" r="2.5"/><path d="M6 0v1.5M6 10.5V12M0 6h1.5M10.5 6H12M1.76 1.76l1.06 1.06M9.18 9.18l1.06 1.06M1.76 10.24l1.06-1.06M9.18 2.82l1.06-1.06" stroke="currentColor" stroke-width="1" fill="none"/></svg>
+                LIGHT
+              </button>
+              <button class="theme-opt theme-opt--active" data-theme-opt="auto" title="Follow system">
+                <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1" y="2" width="10" height="7" rx="1"/><path d="M4 11h4M6 9v2"/></svg>
+                AUTO
+              </button>
+            </div>
+          </div>
+          <div class="footer__col">
             <span class="footer__col-head">LEGAL</span>
             <a href="terms.html">Terms &amp; Conditions</a>
           </div>
@@ -342,15 +358,11 @@
       </div>
     </div>
   </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
   <script src="js/loader.js"></script>
   <script src="js/notif.js"></script>
   <script src="js/theme.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/hero-grid.js"></script>
   <script src="js/scroll.js"></script>
-  <script src="js/vtol-scroll.js"></script>
 </body>
 </html>
