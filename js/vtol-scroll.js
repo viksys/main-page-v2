@@ -32,10 +32,10 @@
     var scene  = new THREE.Scene();
 
     /* Camera — narrow FOV, looking at OFFSET RIGHT point */
-    var OFFSET_X = 2.0; /* drone world X — pushes it further right */
+    var OFFSET_X = -0.3;
     var camera = new THREE.PerspectiveCamera(30, W / H, 0.1, 100);
-    camera.position.set(OFFSET_X, 0.3, 6.2);
-    camera.lookAt(OFFSET_X, 0, 0);
+    camera.position.set(-1.5, 0.3, 6.2);
+    camera.lookAt(-1.5, 0, 0);
 
     /* Lights */
     scene.add(new THREE.AmbientLight(0xffffff, 0.35));

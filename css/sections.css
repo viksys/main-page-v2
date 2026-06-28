@@ -721,7 +721,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 70%;    /* wider canvas, drone placed right within it */
+  width: 45%;
   height: 100%;
   z-index: 2;
   pointer-events: none;
@@ -960,4 +960,39 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: var(--sp-2);
+}
+/* ── PRODUCT GRID MOBILE ── */
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .product-card--featured {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-card--featured {
+    grid-column: 1 / -1;
+    padding: 24px !important;
+  }
+  .product-card {
+    margin: 1px;
+    padding: 24px !important;
+  }
+}
+
+
+/* ── HIDE 3D HERO CANVAS ON MOBILE ── */
+@media (max-width: 768px) {
+  .hero-model-canvas {
+    display: none !important;
+  }
+  /* Give page-hero full width back on mobile */
+  .page-hero {
+    overflow: visible;
+  }
 }

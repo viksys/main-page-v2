@@ -22,7 +22,7 @@
 
     var scene  = new THREE.Scene();
     var camera = new THREE.PerspectiveCamera(34, W / H, 0.1, 100);
-    camera.position.set(0, 0.5, 4.0);
+    camera.position.set(0, -2.4, 4.0);
     camera.lookAt(0, 0, 0);
 
     scene.add(new THREE.AmbientLight(0xffffff, 0.38));
@@ -77,7 +77,7 @@
       if (modelGroup) {
         modelGroup.rotation.x = rotCurX;
         modelGroup.rotation.y = rotCurY + autoRot;
-        modelGroup.position.y = Math.sin(t * 0.75) * 0.04;
+        modelGroup.position.y = -0.4 + Math.sin(t * 0.75) * 0.04;
       }
       if (matLine) matLine.emissiveIntensity = 0.7 + Math.sin(t * 1.9) * 0.3;
       if (matBar)  matBar.emissiveIntensity  = 0.6 + Math.sin(t * 0.65) * 0.2;
@@ -99,7 +99,7 @@
       new THREE.GLTFLoader().load('assets/models/tablet.glb', function (gltf) {
         var obj = gltf.scene;
         /* Stand upright — screen faces viewer */
-        obj.rotation.set(0, Math.PI / 2, Math.PI / 2);
+        obj.rotation.set(0, -Math.PI / 2, 0);
         fitToView(obj, 2.0);
         var g = new THREE.Group();
         g.add(obj);
